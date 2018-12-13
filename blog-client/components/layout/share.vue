@@ -77,7 +77,7 @@
     },
     computed: {
       url() {
-        return `https://peytonis.aitboy.cn${this.$route.fullPath}`
+        return `http://peytonis.aitboy.cn${this.$route.fullPath}`
       },
       mobileLayout() {
         return this.$store.state.option.mobileLayout
