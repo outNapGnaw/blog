@@ -14,12 +14,12 @@ exports.APP = {
 	PORT: 8000,
 	ROOT_PATH: __dirname,
 	NAME: 'peytonis.aitboy.cn',
-	URL: 'https://peytonis.aitboy.cn',
+	URL: 'http://peytonis.aitboy.cn',
 	FRONT_END_PATH: path.join(__dirname, '..', 'peytonis.aitboy.cn')
 }
 
 exports.CROSS_DOMAIN = {
-	allowedOrigins: ['https://peytonis.aitboy.cn', 'https://cdn.aitboy.cn', 'https://peytonblogadmin.aitboy.cn'],
+	allowedOrigins: ['http://peytonis.aitboy.cn', 'http://cdn.aitboy.cn', 'http://peytonblogadmin.aitboy.cn'],
 	allowedReferer: 'peytonis.aitboy.cn'
 }
 
