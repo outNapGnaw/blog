@@ -24,9 +24,16 @@ exports.CROSS_DOMAIN = {
 }
 
 exports.MONGODB = {
-	uri: `mongodb://127.0.0.1:${argv.dbport || '27017'}/NodePress`,
+	uri: `mongodb://172.18.0.7:${argv.dbport || '27017'}/NodePress`,
 	username: argv.db_username || 'DB_username',
 	password: argv.db_password || 'DB_password'
+}
+
+exports.REDIS = {
+  host:'172.18.0.8',
+  port:6379,
+  password:'',
+  db:1
 }
 exports.AUTH = {
 	data: argv.auth_data || { user: 'root' },
