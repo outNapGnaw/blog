@@ -10,13 +10,14 @@ const consola = require('consola')
 const schedule = require('node-schedule')
 const { isString } = require('np-helper/np-data-validate')
 
+const CONFIG = require('app.config')
 const memoryClient = {}
 let redisClient = null
 let redisIsAvailable = false
 
 const connectRedis = () => {
 
-	exports.redis = redisClient = redis.createClient({ detect_buffers: true })
+	exports.redis = redisClient = redis.createClient({ ...CONFIG.REDIS, detect_buffers: true })
 
 	redisClient.on('error', err => {
 		redisIsAvailable = false
