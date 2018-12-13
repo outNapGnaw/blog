@@ -35,10 +35,10 @@
           <i class="iconfont icon-user"></i>
           <span v-text="$i18n.nav.about">About</span>
         </nuxt-link>
-        <nuxt-link to="/service" class="item">
+        <!-- <nuxt-link to="/service" class="item">
           <i class="iconfont icon-zan"></i>
           <span v-text="$i18n.nav.service">Service</span>
-        </nuxt-link>
+        </nuxt-link> -->
         <nuxt-link to="/guestbook" class="item guestbook">
           <i class="iconfont icon-comment"></i>
           <span v-text="$i18n.nav.guestbook">Guestbook</span>
@@ -69,10 +69,10 @@
           <i class="iconfont icon-debug"></i>
           <span>Errend.io</span>
         </a>
-        <nuxt-link to="/app" class="item app">
+        <!-- <nuxt-link to="/app" class="item app">
           <i class="iconfont icon-app"></i>
           <span v-text="$i18n.nav.app">App</span>
-        </nuxt-link>
+        </nuxt-link> -->
       </nav>
     </div>
   </aside>

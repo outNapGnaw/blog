@@ -64,10 +64,10 @@
         <i class="iconfont icon-debug"></i>
         <span>Errend.io</span>
       </a>
-      <nuxt-link to="/app" class="item app">
+      <!-- <nuxt-link to="/app" class="item app">
         <i class="iconfont icon-app"></i>
         <span v-text="$i18n.nav.app"></span>
-      </nuxt-link>
+      </nuxt-link> -->
     </nav>
   </div>
 </template>
