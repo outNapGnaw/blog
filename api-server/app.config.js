@@ -19,7 +19,7 @@ exports.APP = {
 }
 
 exports.CROSS_DOMAIN = {
-	allowedOrigins: ['https://outNapGnaw.me', 'https://cdn.outNapGnaw.me', 'https://admin.outNapGnaw.me'],
+	allowedOrigins: ['https://peytonis.aitboy.cn', 'https://cdn.aitboy.cn', 'https://peytonblogadmin.aitboy.cn'],
 	allowedReferer: 'outNapGnaw.me'
 }
 
@@ -37,13 +37,13 @@ exports.AUTH = {
 exports.EMAIL = {
 	account: argv.email_account || 'your email address like : i@outNapGnaw.me',
 	password: argv.email_password || 'your email password',
-	from: '"outNapGnaw" <i@outNapGnaw.me>',
+	from: '"outNapGnaw" <wptwwj@163.com>',
 	admin: 'outNapGnaw'
 }
 
 exports.AKISMET = {
 	key: argv.akismet_key || 'your akismet Key',
-	blog: argv.akismet_blog || 'your akismet blog site, like: https://outNapGnaw.me'
+	blog: argv.akismet_blog || 'your akismet blog site, like: https://peytonis.aitboy.cn'
 }
 
 exports.GITHUB = {
@@ -55,7 +55,7 @@ exports.ALIYUN = {
 }
 
 exports.BAIDU = {
-	site: argv.baidu_site || 'your baidu site domain like : outNapGnaw.me',
+	site: argv.baidu_site || 'your baidu site domain like : peytonis.aitboy.cn',
 	token: argv.baidu_token || 'your baidu seo push token'
 }
 
@@ -72,6 +72,6 @@ exports.INFO = {
 	version: package.version,
 	author: package.author,
 	site: exports.APP.URL,
-	github: 'https://github.com/outNapGnaw-china',
+	github: 'https://github.com/outNapGnaw',
 	powered: ['Vue', 'Nuxt.js', 'ReactNative', 'Angular', 'Bootstrap', 'Nodejs', 'MongoDB', 'Express', 'Nginx']
 }

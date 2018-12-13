@@ -1,12 +1,12 @@
 {
   "name": "nodepress",
   "version": "2.2.0",
-  "description": "RESTful API server application for outNapGnaw.me blog",
+  "description": "RESTful API server application for peytonis.aitboy.cn blog",
   "private": false,
   "author": {
     "name": "outNapGnaw",
     "email": "wangpeyton@gmail.com",
-    "url": "https://outNapGnaw.me"
+    "url": "https://peytonis.aitboy.cn"
   },
   "license": "MIT",
   "scripts": {

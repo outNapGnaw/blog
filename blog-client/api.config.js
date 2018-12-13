@@ -9,7 +9,7 @@ const { isProdMode } = require('./environment')
 module.exports = {
   // cdnUrl: isProdMode ? 'https://peytonblog.aitboy.cn' : '',
   cdnUrl: isProdMode ? '' : '',
-  proxyUrl: isProdMode ? 'https://peytonblog.aitboy.cn/proxy/' : '/proxy/',
+  proxyUrl: isProdMode ? 'https://peytonis.aitboy.cn/proxy/' : '/proxy/',
   baseUrl: isProdMode ? 'https://peytonblogapi.aitboy.cn' : 'http://localhost:8000',
-  socketHost: isProdMode ? 'https://peytonblog.aitboy.cn' : 'http://localhost:3000'
+  socketHost: isProdMode ? 'https://peytonis.aitboy.cn' : 'http://localhost:3000'
 }
