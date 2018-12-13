@@ -7,8 +7,9 @@
 
 const crypto = require('crypto')
 const uuid = require('node-uuid')
-const { argv } = require('yargs')
+// const { argv } = require('yargs')
 
+const argv = process.env
 const config = {
   rooms: {
     maxClients: 30

@@ -6,21 +6,21 @@
  */
 
 const path = require('path')
-const { argv } = require('yargs')
+// const { argv } = require('yargs')
+const argv = process.env
 const package = require('package')
-
 exports.APP = {
 	LIMIT: 16,
 	PORT: 8000,
 	ROOT_PATH: __dirname,
-	NAME: 'outNapGnaw.me',
-	URL: 'https://outNapGnaw.me',
-	FRONT_END_PATH: path.join(__dirname, '..', 'outNapGnaw.me')
+	NAME: 'peytonis.aitboy.cn',
+	URL: 'https://peytonis.aitboy.cn',
+	FRONT_END_PATH: path.join(__dirname, '..', 'peytonis.aitboy.cn')
 }
 
 exports.CROSS_DOMAIN = {
 	allowedOrigins: ['https://peytonis.aitboy.cn', 'https://cdn.aitboy.cn', 'https://peytonblogadmin.aitboy.cn'],
-	allowedReferer: 'outNapGnaw.me'
+	allowedReferer: 'peytonis.aitboy.cn'
 }
 
 exports.MONGODB = {
@@ -35,7 +35,7 @@ exports.AUTH = {
 }
 
 exports.EMAIL = {
-	account: argv.email_account || 'your email address like : i@outNapGnaw.me',
+	account: argv.email_account || 'your email address like : wptwwj@163.com',
 	password: argv.email_password || 'your email password',
 	from: '"outNapGnaw" <wptwwj@163.com>',
 	admin: 'outNapGnaw'
