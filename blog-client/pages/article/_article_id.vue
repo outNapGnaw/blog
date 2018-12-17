@@ -94,7 +94,7 @@
       <p class="item">
         <span class="title" :class="language">{{ languageIsEn ? 'Article Address:' : '永久地址：' }}</span>
         <span class="site-url" @click="copyArticleUrl">
-          <span>http://outNapGnaw.me/article/{{ article.id }}</span>
+          <span>http://peytonis.aitboy.cn/article/{{ article.id }}</span>
         </span>
       </p>
       <div class="item">

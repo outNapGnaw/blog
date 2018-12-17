@@ -65,7 +65,7 @@
                   <span v-if="comment.ip_location.country && comment.ip_location.city">&nbsp;-&nbsp;</span>
                   <span>{{ comment.ip_location.city }}</span>
                 </span>
-                <span class="flool">#{{ comment.id }}</span>
+                <span class="flool">#{{ index + 1 }}</span>
               </div>
               <div class="cm-content">
                 <p class="reply" v-if="!!comment.pid">

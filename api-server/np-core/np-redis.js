@@ -14,10 +14,13 @@ const CONFIG = require('app.config')
 const memoryClient = {}
 let redisClient = null
 let redisIsAvailable = false
-
 const connectRedis = () => {
 
-	exports.redis = redisClient = redis.createClient({ ...CONFIG.REDIS, detect_buffers: true })
+	exports.redis = redisClient = redis.createClient({ 
+		host: CONFIG.REDIS.host, 
+		port: CONFIG.REDIS.port, 
+		detect_buffers: true 
+	})
 
 	redisClient.on('error', err => {
 		redisIsAvailable = false
