@@ -5,6 +5,7 @@
  * @author outNapGnaw <https://github.com/outNapGnaw>
  */
 
+const { isProdMode, isDevMode } = require('environment')
 const path = require('path')
 // const { argv } = require('yargs')
 const argv = process.env
@@ -24,13 +25,13 @@ exports.CROSS_DOMAIN = {
 }
 
 exports.MONGODB = {
-	uri: `mongodb://127.0.0.1:${argv.dbport || '27017'}/NodePress`,
+	uri: `mongodb://${isProdMode ? 'mongo' : '127.0.0.1'}:${argv.dbport || '27017'}/NodePress`,
 	username: argv.db_username || 'DB_username',
 	password: argv.db_password || 'DB_password'
 }
 
 exports.REDIS = {
-  host: '127.0.0.1',
+  host: `${isProdMode ? 'redis' : '127.0.0.1'}`,
   port: 6379,
   password: '',
   db: 1
@@ -42,15 +43,16 @@ exports.AUTH = {
 }
 
 exports.EMAIL = {
-	account: argv.email_account || 'your email address like : wptwwj@163.com',
-	password: argv.email_password || 'your email password',
+	smtp: argv.email_smtp || 'smtp.163.com',
+	account: argv.email_account || 'email here',
+	password: argv.email_password || 'password here',
 	from: '"outNapGnaw" <wptwwj@163.com>',
 	admin: 'outNapGnaw'
 }
 
 exports.AKISMET = {
-	key: argv.akismet_key || 'your akismet Key',
-	blog: argv.akismet_blog || 'your akismet blog site, like: https://peytonis.aitboy.cn'
+	key: argv.akismet_key || 'akismet_key here',
+	blog: argv.akismet_blog || 'blog site url here'
 }
 
 exports.GITHUB = {

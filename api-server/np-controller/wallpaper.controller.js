@@ -28,7 +28,13 @@ const commonTimingConfig = {
 	// 如果获取失败则一分钟后重新获取一次
 	error: 1000 * 60
 }
-
+// 通用延时配置
+const commonTimeoutConfig = {
+		// 成功后 30分钟 获取数据
+		success: 1000 * 60 * 30,
+		// 失败后 5分钟 获取数据
+		error: 1000 * 60 * 5
+}
 // 获取今日壁纸
 const getWallpapers = params => {
 	return new Promise((resolve, reject) => {
@@ -52,7 +58,8 @@ const getWallpapers = params => {
 // 获取今日壁纸故事 Redis 任务
 const redisWallpapersCache = redis.interval({
 	key: REDIS_CACHE_FIELDS.wallpapers,
-	timing: commonTimingConfig,
+	// timing: commonTimingConfig,
+	timeout: commonTimeoutConfig,
 	promise: () => getWallpapers({ size: 8 })
 })
 
@@ -88,7 +95,8 @@ WallpaperCtrl.list.GET = (req, res) => {
 // 获取今日壁纸故事 Redis 任务
 const redisStoryCache = redis.interval({
 	key: REDIS_CACHE_FIELDS.wallpaperStory,
-	timing: commonTimingConfig,
+	// timing: commonTimingConfig,
+	timeout: commonTimeoutConfig,
 	promise: () => wbw.getTodayWallpaperStory() 
 })
 

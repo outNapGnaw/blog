@@ -12,7 +12,7 @@ const nodemailer = require('nodemailer')
 let clientIsValid = false
 
 const transporter = nodemailer.createTransport({
-	host: 'smtp.qq.com',
+	host: CONFIG.EMAIL.smtp,
 	secure: true,
 	port: 465,
 	auth: {
@@ -25,7 +25,7 @@ const verifyClient = () => {
 	transporter.verify((error, success) => {
 		if (error) {
 			clientIsValid = false
-			consola.warn('邮件客户端初始化连接失败，将在一小时后重试')
+			consola.warn(error)
 			setTimeout(verifyClient, 1000 * 60 * 60)
 		} else {
 			clientIsValid = true
