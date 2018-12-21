@@ -53,7 +53,7 @@ export default new Vue({
       if (this.currentSong) {
         const picUrl = this.currentSong.album.picUrl
         return picUrl
-                ? picUrl.replace('http://', this.proxyUrl) + '?param=600y600' 
+                ? picUrl.replace('https://', this.proxyUrl) + '?param=600y600' 
                 : defaultImage
       } else {
         return defaultImage

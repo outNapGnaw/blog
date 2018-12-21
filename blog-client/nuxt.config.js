@@ -18,7 +18,8 @@ module.exports = {
   dev: isDevMode,
   env: {
     baseUrl: apiConfig.baseUrl,
-    HOST_URL: apiConfig.socketHost
+    HOST_URL: apiConfig.socketHost,
+    protocol: process.env.protocol
   },
   loading: {
     color: '#0088f5'

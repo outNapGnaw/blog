@@ -20,7 +20,7 @@ exports.APP = {
 }
 
 exports.CROSS_DOMAIN = {
-	allowedOrigins: ['http://peytonis.aitboy.cn', 'http://cdn.aitboy.cn', 'http://peytonblogadmin.aitboy.cn:8088'],
+	allowedOrigins: ['https://peytonis.aitboy.cn', 'https://cdn.aitboy.cn', 'https://peytonblogadmin.aitboy.cn'],
 	allowedReferer: 'aitboy.cn'
 }
 

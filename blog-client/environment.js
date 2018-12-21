@@ -12,6 +12,8 @@ const isStatic = process && process.static
 const isServer = process && process.server
 const isBrowser = process && process.browser
 
+const httpOrHttps = environment.protocol || 'http'
+
 module.exports = {
   isDevMode,
   isProdMode,
@@ -19,5 +21,7 @@ module.exports = {
   
   isStatic,
   isBrowser,
-  isServer
+  isServer,
+
+  httpOrHttps
 }
