@@ -12,7 +12,7 @@ const isStatic = process && process.static
 const isServer = process && process.server
 const isBrowser = process && process.browser
 
-const httpOrHttps = environment.protocol || 'http'
+const httpOrHttps = isProdMode ? 'https' : 'http'
 
 module.exports = {
   isDevMode,
