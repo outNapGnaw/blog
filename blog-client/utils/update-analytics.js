@@ -17,7 +17,7 @@ const UPDATE_TIME = {
 // 更新脚本
 const updateGAScript = () => {
   (function doUpdate() {
-    axios.get('http://www.google-analytics.com/analytics.js', { timeout: 6000 }).then(res => {
+    axios.get('https://www.google-analytics.com/analytics.js', { timeout: 6000 }).then(res => {
       if (res.status === 200) {
         fs.writeFileSync(path.join(__dirname, '..', 'static', 'scripts') + '/analytics.js', res.data)
         consola.info('GA 脚本更新成功', new Date())

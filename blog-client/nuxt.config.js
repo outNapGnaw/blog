@@ -150,7 +150,7 @@ module.exports = {
       { name: 'HandheldFriendly', content: 'True' },
       { name: 'apple-mobile-web-app-capable', content: 'yes' },
       { name: 'apple-mobile-web-app-status-bar-style', content: 'black' },
-      { name: 'apple-mobile-web-app-title', content: 'outNapGnaw.me' },
+      { name: 'apple-mobile-web-app-title', content: 'peytonis.aitboy.cn' },
       { name: 'apple-touch-icon', content: '/static/icon.png' },
       { name: 'msapplication-TileImage', content: '/static/icon.png' },
       { name: 'msapplication-TileColor', content: '#0088f5' },
@@ -160,17 +160,14 @@ module.exports = {
       { hid: 'description', name: 'description', content: '皮' }
     ],
     link: [
-      { rel: 'dns-prefetch', href: '//outNapGnaw.me' },
-      { rel: 'dns-prefetch', href: '//api.outNapGnaw.me' },
-      { rel: 'dns-prefetch', href: '//cdn.outNapGnaw.me' },
-      { rel: 'dns-prefetch', href: '//static.outNapGnaw.me' },
-      { rel: 'dns-prefetch', href: '//gravatar.outNapGnaw.me' },
+      { rel: 'dns-prefetch', href: '//peytonis.aitboy.cn' },
+      { rel: 'dns-prefetch', href: '//peytonblogapi.aitboy.cn' },
       { rel: 'dns-prefetch', href: '//at.alicdn.com' },
       { rel: 'dns-prefetch', href: '//fonts.gstatic.com' },
       { rel: 'dns-prefetch', href: '//adservice.google.com' },
       { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
       { rel: 'dns-prefetch', href: '//googleads.g.doubleclick.net' },
-      { rel: 'dns-prefetch', href: '//www.google-analytics.com' },
+      { rel: 'dns-prefetch', href: '//www.google-analytics.com'  },
       { rel: 'dns-prefetch', href: '//tpc.googlesyndication.com' },
       { rel: 'dns-prefetch', href: '//pagead2.googlesyndication.com' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -189,7 +186,7 @@ module.exports = {
         type: 'text/javascript',
         innerHTML: `
         (adsbygoogle = window.adsbygoogle || []).push({
-          google_ad_client: 'ca-pub-4710915636313788',
+          google_ad_client: 'ca-pub-4698108608010880',
           enable_page_level_ads: false
         });`
       }
