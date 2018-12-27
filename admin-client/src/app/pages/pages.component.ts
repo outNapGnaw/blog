@@ -6,6 +6,7 @@
 
 import { Component, ViewEncapsulation } from '@angular/core';
 import { blog } from '@/environments/environment';
+import { Blog } from '@app/pages/pages.constants';
 @Component({
   selector: 'app-pages',
   encapsulation: ViewEncapsulation.Emulated,
@@ -22,7 +23,7 @@ import { blog } from '@/environments/environment';
     <footer class="al-footer clearfix">
       <div class="al-footer-right">Created with <i class="ion-md-heart"></i></div>
       <div class="al-footer-main clearfix">
-        <div class="al-copy">&copy; <a href="{{blog.host}}">NodePress</a> 2018</div>
+        <div class="al-copy">&copy; <a href="{{_blog.host}}">NodePress</a> 2018</div>
         <ul class="al-share clearfix" *ngIf="false">
           <li><i class="socicon socicon-facebook"></i></li>
           <li><i class="socicon socicon-twitter"></i></li>
@@ -38,5 +39,6 @@ import { blog } from '@/environments/environment';
 })
 export class PagesComponent {
 
+  public _blog: Blog = blog;
   constructor() {}
 }

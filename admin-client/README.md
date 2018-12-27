@@ -1,60 +1,60 @@
 
 # Angular-Admin
 
-[![GitHub stars](https://img.shields.io/github/stars/outNapGnaw-china/angular-admin.svg?style=flat-square)](https://github.com/outNapGnaw-china/angular-admin/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/outNapGnaw-china/angular-admin.svg?style=flat-square)](https://github.com/outNapGnaw-china/angular-admin/issues)
-[![GitHub forks](https://img.shields.io/github/forks/outNapGnaw-china/angular-admin.svg?style=flat-square)](https://github.com/outNapGnaw-china/angular-admin/network)
-[![GitHub last commit](https://img.shields.io/github/last-commit/google/skia.svg?style=flat-square)](https://github.com/outNapGnaw-china/angular-admin)
+[![GitHub stars](https://img.shields.io/github/stars/outNapGnaw/angular-admin.svg?style=flat-square)](https://github.com/outNapGnaw/angular-admin/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/outNapGnaw/angular-admin.svg?style=flat-square)](https://github.com/outNapGnaw/angular-admin/issues)
+[![GitHub forks](https://img.shields.io/github/forks/outNapGnaw/angular-admin.svg?style=flat-square)](https://github.com/outNapGnaw/angular-admin/network)
+[![GitHub last commit](https://img.shields.io/github/last-commit/google/skia.svg?style=flat-square)](https://github.com/outNapGnaw/angular-admin)
 [![](https://badge.juejin.im/entry/58a5f28eac502e006cbed110/likes.svg?style=flat-square)](https://juejin.im/entry/58a5f28eac502e006cbed110/detail)
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/outNapGnaw-china/angular-admin.svg?style=flat-square)](https://twitter.com/intent/tweet?url=https://github.com/outNapGnaw-china/angular-admin)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/outNapGnaw/angular-admin.svg?style=flat-square)](https://twitter.com/intent/tweet?url=https://github.com/outNapGnaw/angular-admin)
 
 My blog admin client by Angular, Bootstrap4.
 
 The project forked from [ng2-admin](https://akveo.github.io/ng2-admin/).
 
-The api of this project is accompanied by the [nodepress](https://github.com/outNapGnaw-china/nodepress) program, and if you want to run up, you need to install [nodepress](https://github.com/outNapGnaw-china/nodepress).
+The api of this project is accompanied by the [nodepress](https://github.com/outNapGnaw/nodepress) program, and if you want to run up, you need to install [nodepress](https://github.com/outNapGnaw/nodepress).
 
 If you only need to demonstrate the project locally, you need to comment on the following lines of code:
-- [src/app/app.component.ts:77](https://github.com/outNapGnaw-china/angular-admin/blob/master/src/app/app.component.ts#L77)
-- [src/app/app.component.ts:82](https://github.com/outNapGnaw-china/angular-admin/blob/master/src/app/app.component.ts#L82)
-- [src/app/app.component.ts:161](https://github.com/outNapGnaw-china/angular-admin/blob/master/src/app/app.component.ts#L161)
-- [src/app/app.component.ts:162](https://github.com/outNapGnaw-china/angular-admin/blob/master/src/app/app.component.ts#L162)
-- [src/app/app.component.ts:163](https://github.com/outNapGnaw-china/angular-admin/blob/master/src/app/app.component.ts#L163)
+- [src/app/app.component.ts:77](https://github.com/outNapGnaw/blog/blob/master/admin-client/src/app/app.component.ts#L77)
+- [src/app/app.component.ts:82](https://github.com/outNapGnaw/blog/blob/master/admin-client/src/app/app.component.ts#L82)
+- [src/app/app.component.ts:161](https://github.com/outNapGnaw/blog/blob/master/admin-client/src/app/app.component.ts#L161)
+- [src/app/app.component.ts:162](https://github.com/outNapGnaw/blog/blob/master/admin-client/src/app/app.component.ts#L162)
+- [src/app/app.component.ts:163](https://github.com/outNapGnaw/blog/blob/master/admin-client/src/app/app.component.ts#L163)
 
 **CHANGELOG**
 
-[CHANGELOG](https://github.com/outNapGnaw-china/angular-admin/blob/master/CHANGELOG.md)
+[CHANGELOG](https://github.com/outNapGnaw/blog/blob/master/admin-client/CHANGELOG.md)
 
 
 # Screenshots
 
 **仪表盘**
 
-![](https://raw.githubusercontent.com/outNapGnaw-china/angular-admin/master/screenshots/dashboard.jpg)
+![](https://raw.githubusercontent.com/outNapGnaw/blog/blob/master/admin-client/screenshots/dashboard.jpg)
 
 **标签管理**
 
-![](https://raw.githubusercontent.com/outNapGnaw-china/angular-admin/master/screenshots/tag-list.jpg)
+![](https://raw.githubusercontent.com/outNapGnaw/blog/blob/master/admin-client/screenshots/tag-list.jpg)
 
 **发布文章**
 
-![发布文章](https://raw.githubusercontent.com/outNapGnaw-china/angular-admin/master/screenshots/submit-article.jpg)
+![发布文章](https://raw.githubusercontent.com/outNapGnaw/blog/blob/master/admin-client/screenshots/submit-article.jpg)
 
 **全局设置**
 
-![](https://raw.githubusercontent.com/outNapGnaw-china/angular-admin/master/screenshots/setting.jpg)
+![](https://raw.githubusercontent.com/outNapGnaw/blog/blob/master/admin-client/screenshots/setting.jpg)
 
 **文章列表**
 
-![](https://raw.githubusercontent.com/outNapGnaw-china/angular-admin/master/screenshots/article-list.jpg)
+![](https://raw.githubusercontent.com/outNapGnaw/blog/blob/master/admin-client/screenshots/article-list.jpg)
 
 **评论管理**
 
-![](https://raw.githubusercontent.com/outNapGnaw-china/angular-admin/master/screenshots/comment.jpg)
+![](https://raw.githubusercontent.com/outNapGnaw/blog/blob/master/admin-client/screenshots/comment.jpg)
 
 **markdown编辑器**
 
-![](https://raw.githubusercontent.com/outNapGnaw-china/angular-admin/master/screenshots/markdown.jpg)
+![](https://raw.githubusercontent.com/outNapGnaw/blog/blob/master/admin-client/screenshots/markdown.jpg)
 
 # 程序结构（踩坑记录）
 
@@ -63,7 +63,7 @@ If you only need to demonstrate the project locally, you need to comment on the 
    - 一堆方法
    - 返回 promise
    - 用第三方组件配合来实现 res/err 的通知处理
-   - 定制化的 http 服务是需要自己封装的，现在最新版本里我使用自行封装的 [ApiService](https://github.com/outNapGnaw-china/angular-admin/blob/master/src/app/api.service.ts)
+   - 定制化的 http 服务是需要自己封装的，现在最新版本里我使用自行封装的 [ApiService](https://github.com/outNapGnaw/blog/blob/master/admin-client/src/app/api.service.ts)
    - 承担 权限控制、请求拦截 的职责
    - 返回 promise
 
@@ -72,7 +72,7 @@ If you only need to demonstrate the project locally, you need to comment on the 
    - 但实现原理不同，Angular 内置了 Zone.js 对所有全局的异步 API 进行了高级包装，并抽象出了异步任务管理层，用以驱动 Angular 的数据检测
    - "盒子里的香蕉" `[(ngModel)] = [ngModelChange] + (model)`
    - 一句话：用既定内置的 API 做预期的事
-   - [看这里有实现文件](https://github.com/outNapGnaw-china/angular-admin/blob/master/src/app/theme/components/baMarkdownEditor/markdownEditor.component.ts)
+   - [看这里有实现文件](https://github.com/outNapGnaw/blog/blob/master/admin-client/src/app/theme/components/baMarkdownEditor/markdownEditor.component.ts)
 
 ## 路由管理和拦截
    - 路由管理可以集中内聚管理，也可以模块化碎片化，项目中两者都有
@@ -80,7 +80,7 @@ If you only need to demonstrate the project locally, you need to comment on the 
    - 因为我暂时没找到管方提供的类似拦截的 api，如果有更好的方法，可以随时开一个 Issue
 
 ## auth验证
-   - 现在官方有了拦截器，自己封装一个特别简单轻松，[ApiService](https://github.com/outNapGnaw-china/angular-admin/blob/master/src/app/api.service.ts)
+   - 现在官方有了拦截器，自己封装一个特别简单轻松，[ApiService](https://github.com/outNapGnaw/blog/blob/master/admin-client/src/app/api.service.ts)
    - 承担 权限控制、请求拦截 的职责
 
 ## 组件/模块与页面构成

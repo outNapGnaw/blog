@@ -38,7 +38,6 @@ export class CommentListComponent implements OnInit {
   @ViewChild('delModal') public delModal: ModalDirective;
 
   private _apiPath: TApiPath = API_PATH.COMMENT;
-  private _blog: Blog = blog;
 
   // 搜索参数
   public osParse = osParse;
@@ -48,6 +47,8 @@ export class CommentListComponent implements OnInit {
   public keyword: AbstractControl;
   public getParams: IGetParams = lodash.cloneDeep(DEFAULT_GET_PARAMS);
 
+  public _blog: Blog = blog;
+  
   // 初始化数据
   public post_id: TCommentPostId = null;
   public comments: IResponseData<IComment> = {
