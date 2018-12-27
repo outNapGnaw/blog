@@ -10,6 +10,6 @@ export const environment = {
 };
 
 export const api = {
-  API_ROOT: 'http://peytonblogapi.aitboy.cn',
-  STATIC_URL: 'http://peytonblogadmin.aitboy.cn'
+  API_ROOT: 'https://peytonblogapi.aitboy.cn',
+  STATIC_URL: 'https://peytonblogadmin.aitboy.cn'
 };
