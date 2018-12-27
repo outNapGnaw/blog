@@ -60,3 +60,7 @@ export enum EOriginState {
   reprint = 1, // 转载
   hybrid = 2 // 混合
 }
+
+export interface Blog {
+  host: string;
+}

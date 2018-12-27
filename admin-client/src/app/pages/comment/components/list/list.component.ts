@@ -15,8 +15,9 @@ import { SaHttpRequesterService } from '@app/services';
 import { IGetParams } from '@app/pages/pages.constants';
 import { browserParse, osParse } from '@app/pages/comment/comment.ua.service';
 import { handleBatchSelectChange, handleItemSelectChange } from '@/app/pages/pages.service';
-import { TApiPath, TSelectedIds, TSelectedAll, IResponseData, IFetching } from '@app/pages/pages.constants';
+import { TApiPath, TSelectedIds, TSelectedAll, IResponseData, IFetching, Blog } from '@app/pages/pages.constants';
 import { IComment, TCommentId, TCommentPostId, ESortType, ECommentState, ECommentPostType } from '@app/pages/comment/comment.constants';
+import { blog } from '@/environments/environment';
 
 const DEFAULT_GET_PARAMS = {
   sort: ESortType.desc,
@@ -37,6 +38,7 @@ export class CommentListComponent implements OnInit {
   @ViewChild('delModal') public delModal: ModalDirective;
 
   private _apiPath: TApiPath = API_PATH.COMMENT;
+  private _blog: Blog = blog;
 
   // 搜索参数
   public osParse = osParse;

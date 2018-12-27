@@ -78,7 +78,7 @@
                 <div class="btn-group" role="group" aria-label="Basic example">
                   <button type="button" class="btn btn-sm btn-warning" (click)="editCategory(category)">编辑分类</button>
                   <button type="button" class="btn btn-sm btn-danger"  (click)="delCategory(category)">删除分类</button>
-                  <a class="btn btn-sm btn-success" href="//outNapGnaw.me/category/{{ category.slug }}" target="_blank">查看分类</a>
+                  <a class="btn btn-sm btn-success" href="{{_blog.host}}/category/{{ category.slug }}" target="_blank">查看分类</a>
                 </div>
               </div>
             </td>

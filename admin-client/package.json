@@ -4,10 +4,10 @@
   "author": {
     "name": "outNapGnaw",
     "email": "wangpeyton@gmail.com",
-    "url": "https://outNapGnaw.me"
+    "url": "https://peytonis.aitboy.cn"
   },
   "private": false,
-  "homepage": "https://admin.outNapGnaw.me",
+  "homepage": "https://peytonblogadmin.aitboy.cn",
   "license": "MIT",
   "scripts": {
     "ng": "ng",

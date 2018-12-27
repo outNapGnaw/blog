@@ -211,7 +211,7 @@
                       <div class="btn-group" role="group" aria-label="Basic example">
                         <button type="button" class="btn btn-sm btn-warning" (click)="putTag(tag)">编辑标签</button>
                         <button type="button" class="btn btn-sm btn-danger" (click)="delTagModal(tag)">删除标签</button>
-                        <a class="btn btn-sm btn-success" href="//outNapGnaw.me/tag/{{ tag.slug }}" target="_blank">查看标签</a>
+                        <a class="btn btn-sm btn-success" href="{{_blog.host}}/tag/{{ tag.slug }}" target="_blank">查看标签</a>
                       </div>
                     </div>
                   </td>

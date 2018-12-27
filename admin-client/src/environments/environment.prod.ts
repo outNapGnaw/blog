@@ -13,3 +13,7 @@ export const api = {
   API_ROOT: 'https://peytonblogapi.aitboy.cn',
   STATIC_URL: 'https://peytonblogadmin.aitboy.cn'
 };
+
+export const blog = {
+  host: 'https://peytonis.aitboy.cn'
+}

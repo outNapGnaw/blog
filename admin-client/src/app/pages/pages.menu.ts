@@ -4,6 +4,7 @@
  * @author outNapGnaw <https://github.com/outNapGnaw>
  */
 
+import { blog } from '@/environments/environment';
 export const PAGES_MENU = [
   {
     path: '',
@@ -149,7 +150,7 @@ export const PAGES_MENU = [
         data: {
           menu: {
             title: 'SRE service',
-            url: 'https://sre.outNapGnaw.me',
+            url: blog.host,
             icon: 'ion-md-construct',
             order: 800,
             target: '_blank'
@@ -173,7 +174,7 @@ export const PAGES_MENU = [
         data: {
           menu: {
             title: 'Blog',
-            url: 'https://outNapGnaw.me',
+            url: blog.host,
             icon: 'ion-md-ribbon',
             order: 800,
             target: '_blank'
@@ -185,7 +186,7 @@ export const PAGES_MENU = [
         data: {
           menu: {
             title: 'Github',
-            url: 'https://github.com/outNapGnaw-china',
+            url: 'https://github.com/outNapGnaw',
             icon: 'ion-logo-github',
             target: '_blank'
           }

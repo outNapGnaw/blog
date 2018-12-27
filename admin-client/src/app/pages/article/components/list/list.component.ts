@@ -11,9 +11,10 @@ import * as lodash from 'lodash';
 import * as API_PATH from '@app/constants/api';
 import { ModalDirective } from 'ngx-bootstrap';
 import { SaHttpRequesterService } from '@app/services';
-import { IGetParams } from '@app/pages/pages.constants';
+import { IGetParams, Blog } from '@app/pages/pages.constants';
 import { handleBatchSelectChange, handleItemSelectChange } from '@/app/pages/pages.service';
 import { IArticle, ICategory, ITag, EArticlePatchAction, buildLevelCategories } from '@/app/pages/article/article.service';
+import { blog } from '@/environments/environment';
 import {
   TApiPath,
   TSelectedIds,
@@ -60,6 +61,8 @@ export class ArticleListComponent implements OnInit {
   public keyword: AbstractControl;
   public getParams: IGetParams = lodash.cloneDeep(DEFAULT_GET_PARAMS);
 
+  public _blog: Blog = blog
+  
   // 初始化数据
   public tags: IResponseData<ITag> = {
     data: []

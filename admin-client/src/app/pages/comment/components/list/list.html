@@ -239,7 +239,7 @@
                      <div class="button-wrapper">
                       <a class="btn btn-info btn-sm"
                          target="_blank"
-                         [href]="isGuestbook(comment.post_id) ? 'https://outNapGnaw.me/guestbook' : ('https://outNapGnaw.me/article/' + comment.post_id)">
+                         [href]="isGuestbook(comment.post_id) ? (_blog.host + '/guestbook') : (_blog.host + '/article/' + comment.post_id)">
                         <span>宿主页面</span>
                       </a>
                     </div>

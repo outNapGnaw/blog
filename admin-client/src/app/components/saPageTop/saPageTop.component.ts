@@ -10,6 +10,8 @@ import { Router } from '@angular/router';
 import { GlobalState } from 'app/global.state';
 import { AppState } from 'app/app.service';
 import { TOKEN } from '@app/constants/auth';
+import { Blog } from '@app/pages/pages.constants';
+import { blog } from '@/environments/environment';
 
 type TCollapsedState = boolean;
 
@@ -25,6 +27,8 @@ export class SaPageTopComponent {
   public isMenuCollapsed: TCollapsedState = false;
   public isProfileCollapsed: TCollapsedState = false;
 
+  public _blog: Blog = blog
+  
   constructor(private _router: Router,
               private _state: GlobalState,
               private _appState: AppState) {

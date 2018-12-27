@@ -11,6 +11,9 @@ export const environment = {
 
 export const api = {
   API_ROOT: '/api',
-  STATIC_URL: 'https://static.outNapGnaw.me'
+  STATIC_URL: 'https://static.aitboy.cn'
 };
 
+export const blog = {
+  host: 'http://localhost:3000'
+}

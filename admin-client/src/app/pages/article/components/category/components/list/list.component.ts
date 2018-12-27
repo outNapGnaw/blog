@@ -5,9 +5,10 @@
  */
 
 import { Component, ViewEncapsulation, Input, Output, EventEmitter } from '@angular/core';
-import { IFetching, IResponseData, TSelectedAll, TSelectedIds } from '@app/pages/pages.constants';
+import { IFetching, IResponseData, TSelectedAll, TSelectedIds, Blog } from '@app/pages/pages.constants';
 import { handleBatchSelectChange, handleItemSelectChange } from '@/app/pages/pages.service';
 import { ICategory } from '@/app/pages/article/article.service';
+import { blog } from '@/environments/environment';
 
 @Component({
   selector: 'box-category-list',
@@ -27,7 +28,8 @@ export class ArticleCategoryListComponent {
 
   public categoriesSelectAll: TSelectedAll = false;
   public selectedCategories: TSelectedIds = [];
-
+  public _blog: Blog = blog
+  
   constructor() {}
 
   // 多选切换

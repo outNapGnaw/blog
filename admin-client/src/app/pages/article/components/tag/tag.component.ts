@@ -10,7 +10,7 @@ import { Component, ViewChild, ViewEncapsulation, OnInit } from '@angular/core';
 import { FormGroup, AbstractControl, FormBuilder, Validators } from '@angular/forms';
 
 import { SaHttpRequesterService, IRequestParams } from '@app/services';
-import { TApiPath, TSelectedIds, TSelectedAll, IResponseData, IFetching } from '@app/pages/pages.constants';
+import { TApiPath, TSelectedIds, TSelectedAll, IResponseData, IFetching, Blog } from '@app/pages/pages.constants';
 import { ITag } from '@/app/pages/article/article.service';
 import * as API_PATH from '@app/constants/api';
 import {
@@ -19,6 +19,7 @@ import {
   handleItemSelectChange,
   formControlStateClass
 } from '@/app/pages/pages.service';
+import { blog } from '@/environments/environment';
 
 const DEFAULT_EDIT_FORM = {
   name: '',
@@ -51,6 +52,8 @@ export class ArticleTagComponent implements OnInit {
   // searchForm
   public keyword: AbstractControl;
 
+  public _blog: Blog = blog
+  
   // editForm
   public name: AbstractControl;
   public slug: AbstractControl;

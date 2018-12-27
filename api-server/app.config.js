@@ -15,7 +15,7 @@ exports.APP = {
 	PORT: 8000,
 	ROOT_PATH: __dirname,
 	NAME: 'peytonis.aitboy.cn',
-	URL: 'http://peytonis.aitboy.cn',
+	URL: 'https://peytonis.aitboy.cn',
 	FRONT_END_PATH: path.join(__dirname, '..', 'peytonis.aitboy.cn')
 }
 
