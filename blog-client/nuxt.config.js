@@ -174,7 +174,6 @@ module.exports = {
       { rel: 'author', type: 'text/plain', href: '/humans.txt' }
     ],
     script: [
-      /*
       {
         body: true,
         async: 'async',
@@ -187,10 +186,9 @@ module.exports = {
         innerHTML: `
         (adsbygoogle = window.adsbygoogle || []).push({
           google_ad_client: 'ca-pub-4698108608010880',
-          enable_page_level_ads: false
+          enable_page_level_ads: true
         });`
       }
-      */
     ],
     noscript: [
       { innerHTML: 'This website requires JavaScript.' }
