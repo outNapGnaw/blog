@@ -1444,9 +1444,9 @@ codelyzer@~4.2.1:
     source-map "^0.5.6"
     sprintf-js "^1.0.3"
 
-codemirror@^5.39.2:
-  version "5.42.0"
-  resolved "http://registry.npm.taobao.org/codemirror/download/codemirror-5.42.0.tgz#2d5b640ed009e89dee9ed8a2a778e2a25b65f9eb"
+codemirror@^5.58.2:
+  version "5.58.2"
+  resolved "https://registry.yarnpkg.com/codemirror/-/codemirror-5.58.2.tgz#ed54a1796de1498688bea1cdd4e9eeb187565d1b"
 
 collection-visit@^1.0.0:
   version "1.0.0"
