@@ -56,7 +56,7 @@
     "js-base64": "^2.4.8",
     "loaders.css": "^0.1.2",
     "loadsh": "^0.0.3",
-    "marked": "^0.4.0",
+    "marked": "^4.0.10",
     "ngx-bootstrap": "^3.0.1",
     "normalize.css": "^8.0.0",
     "qiniu-js": "^2.4.0",
