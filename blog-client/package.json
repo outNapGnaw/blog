@@ -32,7 +32,7 @@
     "howler": "^2.0.14",
     "marked": "^0.6.1",
     "node-uuid": "^1.4.8",
-    "nuxt": "^2.2.0",
+    "nuxt": "^2.15.8",
     "particles.js": "^2.0.0",
     "simplewebrtc": "^3.0.2",
     "socket.io": "^2.1.1",
